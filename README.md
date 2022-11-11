@@ -1,6 +1,6 @@
 # fernandodearrillaga.github.io
 
-Recomendaciones WCAG
+
 Uso de label
 Sin tiempo limitado
 Se muestra un mensaje si no está completo un campo obligatorio, señalado con el atributo required
