@@ -7,7 +7,7 @@ function iniciar() { //añade eventos a los campos dirección y país
 
 
 
-const regexp=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$/;
+const regexp=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$/;      //regexp de la contraseña
 const regexpCorreo=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const regexpNombre=/^[\w]+[\s]?[\w]+$/;
 const regexpTarjeta=/^\d{8,19}$/;
