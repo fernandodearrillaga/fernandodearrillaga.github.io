@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <form id="registro" onsubmit="return validar(event)">
+        <h1>REGISTRO</h1>
+        <p>Los campos marcados con asterisco (*) son obligatorios</p>
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="apellidos">Apellidos *</label>
+        <input type="text" id="apellidos" name="apellidos" required><br>
+        <label for="correo">Correo electrónico *</label>
+        <input type="text" id="correo" name="correo" required><br>
+        <label for="contra">Contraseña de acceso *</label>
+        <input type="password" id="contra" name="contra" required><br>
+        <label for="contra2">Confirmación de contraseña *</label>
+        <input type="password" id="contra2" name="contra2" required><br>
+        <p>La contraseña debe tener al menos ocho caracteres y contener al menos una letra minúscula, una mayúscula, un número y un símbolo</p>
+        <label for="sexo">Sexo</label>
+        <input type="radio" id="hombre" name="sexo">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo">
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="otro" name="sexo">
+        <label for="otro">Otro/NS/NC</label><br>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
+        <label for="dirección">Dirección</label>
+        <input type="text" id="direccion" name="direccion"><br>
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option value=""></option>
+            <option value="españa">España</option>
+            <option value="francia">Francia</option>
+            <option value="portugal">Portugal</option>
+        </select><br>
+        <label for="numeroTarjeta">Número de tarjeta de crédito</label>
+        <input type="number" id="numeroTarjeta" name="numeroTarjeta" disabled><br>
+        <input type="checkbox" id="notificaciones" name="notificaciones" value="notificaciones">
+        <label for="notificaciones">Activar notificaciones de la página</label><br>
+        <input type="checkbox" id="revistaDigital" name="revistaDigital" value="revistaDigital">
+        <label for="revistaDigital">Recepción de la revista digital</label><br>
+        <input type="submit" id="submit">
+        
+        
+    </form>
+
+    <form id="login" onsubmit="return validarLogin(event)">
+        <h1>Log-in</h1>
+
+        <label for="correo">Correo electrónico *</label>
+        <input type="text" id="correoLog" name="correo" required><br>
+        <label for="contra">Contraseña*</label>
+        <input type="password" id="contraLog" name="contra" required><br>
+        
+        <input type="submit" id="submit">
+        
+        
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
