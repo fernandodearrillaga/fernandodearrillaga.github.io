@@ -3,7 +3,7 @@ var obj1;
 
 async function conexionAjax() {
   // await code here
-  let result = await makeRequest("GET", "http://localhost:3000/invitados");
+  let result = await makeRequest("GET", "https://my-json-server.typicode.com/fernandodearrillaga/fernandodearrillaga.github.io/invitados");
   // code below here will only execute when await makeRequest() finished loading
   
 }
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
     let post = JSON.stringify(postObj)
-    const url = "http://localhost:3000/invitados"
+    const url = "https://my-json-server.typicode.com/fernandodearrillaga/fernandodearrillaga.github.io/invitados"
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       
           let put = JSON.stringify(putObj);
-          const url = "http://localhost:3000/invitados/"+obj1[i].id;
+          const url = "https://my-json-server.typicode.com/fernandodearrillaga/fernandodearrillaga.github.io/invitados/"+obj1[i].id;
           let xhr = new XMLHttpRequest();
           xhr.open('PUT', url, true);
           xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       
           let put = JSON.stringify(putObj);
-          const url = "http://localhost:3000/invitados/"+obj1[i].id;
+          const url = "https://my-json-server.typicode.com/fernandodearrillaga/fernandodearrillaga.github.io/invitados/"+obj1[i].id;
           let xhr = new XMLHttpRequest();
           xhr.open('PUT', url, true);
           xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
               
           
               
-              const url = "http://localhost:3000/invitados/"+obj1[i].id;
+              const url = "https://my-json-server.typicode.com/fernandodearrillaga/fernandodearrillaga.github.io/invitados/"+obj1[i].id;
               let xhr = new XMLHttpRequest();
               xhr.open('DELETE', url, true);
               xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
               let patch = JSON.stringify(patchObj);
-              const url = "http://localhost:3000/invitados/"+obj1[i].id;
+              const url = "https://my-json-server.typicode.com/fernandodearrillaga/fernandodearrillaga.github.io/invitados/"+obj1[i].id;
               let xhr = new XMLHttpRequest();
               xhr.open('PATCH', url, true);
               xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
