@@ -212,7 +212,7 @@ xhttp.onreadystatechange = function() {
        
     }
 };
-xhttp.open("GET", "http://localhost:3000/productos", true);
+xhttp.open("GET", "https://my-json-server.typicode.com/fernandodearrillaga/fernandodearrillaga.github.io/productos", true);
 xhttp.send();
 
 
